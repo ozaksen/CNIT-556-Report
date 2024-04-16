@@ -3,6 +3,7 @@ import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import TimelineTab from './Pages/TimelineTab';
 import EvidencesTab from './Pages/EvidencesTab';
+import Report from './Pages/Report';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -78,6 +79,9 @@ const App = () => {
         }
         {selectedMenuKey == 2 &&
           <EvidencesTab/>
+        }
+        {selectedMenuKey == 4 &&
+          <Report/>
         }
       </Content>
       <Footer
