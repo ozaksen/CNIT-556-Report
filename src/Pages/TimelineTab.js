@@ -1,37 +1,129 @@
 import React from 'react';
 import { Timeline } from 'antd';
 import { ClockCircleOutlined } from '@ant-design/icons';
+import { Chrono } from "react-chrono";
+
+
 
 const TimelineTab = () => {
-
+    var items = [
+        {
+            title: "Frank Minion is addicted to gambling and being debt-collection",
+            cardTitle: "02/06/2023",
+            cardDetailedText: "Detailed description of Frank Minion's addiction issues and consequences...", // Add your description here
+            media: {
+              name: "dunkirk beach",
+              source: {
+                url: "3_1.png"
+              },
+              type: "IMAGE"
+            }
+          },
+      {
+        title: "02/06/2023",
+        cardTitle: "Frank Minion is addicted to gambling and being debt-collection",
+        media: {
+          name: "dunkirk beach",
+          source: {
+            url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh7ddWs9R2EXa8dJTh6FSkhtqICdNRfhEH4LU2bCGijBzmhiUP"
+          },
+          type: "IMAGE"
+        }
+      },
+      {
+        title: "02/06/2023",
+        cardTitle: "Frank Minion is addicted to gambling and being debt-collection",
+        media: {
+          name: "dunkirk beach",
+          source: {
+            url: "/timeline_1.png"
+          },
+          type: "IMAGE"
+        }
+      },
+      {
+        title: "02/06/2023",
+        cardTitle: "Frank Minion is addicted to gambling and being debt-collection",
+        media: {
+          name: "dunkirk beach",
+          source: {
+            url: "/timeline_1.png"
+          },
+          type: "IMAGE"
+        }
+      },
+      {
+        title: "02/06/2023",
+        cardTitle: "Frank Minion is addicted to gambling and being debt-collection",
+        media: {
+          name: "dunkirk beach",
+          source: {
+            url: "/timeline_1.png"
+          },
+          type: "IMAGE"
+        }
+      },
+      {
+        title: "Frank Minion is addicted to gambling and being debt-collection",
+        cardTitle: "02/06/2023",
+        cardDetailedText: "Detailed description of Frank Minion's addiction issues and consequences...", // Add your description here
+        media: {
+          name: "dunkirk beach",
+          source: {
+            url: "3_1.png"
+          },
+          type: "IMAGE"
+        }
+      },
+  {
+    title: "02/06/2023",
+    cardTitle: "Frank Minion is addicted to gambling and being debt-collection",
+    media: {
+      name: "dunkirk beach",
+      source: {
+        url: "/timeline_1.png"
+      },
+      type: "IMAGE"
+    }
+  },
+  {
+    title: "02/06/2023",
+    cardTitle: "Frank Minion is addicted to gambling and being debt-collection",
+    media: {
+      name: "dunkirk beach",
+      source: {
+        url: "/timeline_1.png"
+      },
+      type: "IMAGE"
+    }
+  },
+  {
+    title: "02/06/2023",
+    cardTitle: "Frank Minion is addicted to gambling and being debt-collection",
+    media: {
+      name: "dunkirk beach",
+      source: {
+        url: "/timeline_1.png"
+      },
+      type: "IMAGE"
+    }
+  },
+  {
+    title: "02/06/2023",
+    cardTitle: "Frank Minion is addicted to gambling and being debt-collection",
+    media: {
+      name: "dunkirk beach",
+      source: {
+        url: "/timeline_1.png"
+      },
+      type: "IMAGE"
+    }
+  },
+    ]
     return (
-        <Timeline
-            mode="alternate"
-            items={[
-                {
-                    children: 'Create a services site 2015-09-01',
-                },
-                {
-                    children: 'Solve initial network problems 2015-09-01',
-                    color: 'green',
-                },
-                {
-                    dot: <ClockCircleOutlined style={{ fontSize: '16px' }} />,
-                    children: `Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.`,
-                },
-                {
-                    color: 'red',
-                    children: 'Network problems being solved 2015-09-01',
-                },
-                {
-                    children: 'Create a services site 2015-09-01',
-                },
-                {
-                    dot: <ClockCircleOutlined style={{ fontSize: '16px' }} />,
-                    children: 'Technical testing 2015-09-01',
-                },
-            ]}
-        />
+        <>
+            <Chrono items={items} mode="HORIZONTAL"></Chrono></>
+
     );
 };
 
