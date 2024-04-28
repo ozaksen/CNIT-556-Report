@@ -4,7 +4,7 @@ import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import TimelineTab from './Pages/TimelineTab';
 import EvidencesTab from './Pages/EvidencesTab';
 import Report from './Pages/Report';
-
+import GraphComponent from './Pages/PeopleGraph';
 const { Header, Content, Footer, Sider } = Layout;
 
 
@@ -14,13 +14,13 @@ const menuItems = [
     key: 1,
     label: 'Timeline'
   },
-  {
-    key: 2,
-    label: 'Evidence by Person'
-  },
+  // {
+  //   key: 2,
+  //   label: 'Evidence by Person'
+  // },
   {
     key: 3,
-    label: 'Accounts'
+    label: 'Relations'
   },
   {
     key: 4,
@@ -60,11 +60,11 @@ const App = () => {
         />
       </Header>
       <Content
-        style={{
-          padding: '0 48px',
-          height: '100%'
-        }}
-      >
+  style={{
+    padding: '0 48px',
+    minHeight: 'calc(100vh - 64px)', // Assuming header height is 64px
+  }}
+>
         <Breadcrumb
           style={{
             margin: '16px 0',
@@ -80,11 +80,14 @@ const App = () => {
         {selectedMenuKey == 2 &&
           <EvidencesTab/>
         }
+        {selectedMenuKey == 3 &&
+          <GraphComponent/>
+        }
         {selectedMenuKey == 4 &&
           <Report/>
         }
       </Content>
-      <Footer
+      {/* <Footer
         style={{
           textAlign: 'center',
           bottom: 0,
@@ -93,7 +96,7 @@ const App = () => {
         }}
       >
         Created by Akif, Yufeng, Xiao
-      </Footer>
+      </Footer> */}
     </Layout>
   );
 };

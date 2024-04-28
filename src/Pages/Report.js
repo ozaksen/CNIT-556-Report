@@ -3,11 +3,30 @@ import { Collapse, Image, Typography } from 'antd';
 
 const { Panel } = Collapse;
 const { Paragraph, Text } = Typography;
+/*
+Who is involved?
+Are there any accomplices?
 
+*/
 const Report = () => {
   return (
     <div className="App">
       <Collapse accordion>
+        <Panel header="1. Who is involved?" key="1">
+          <Paragraph>
+            Check the Relations Tab
+          </Paragraph>
+        </Panel>
+        <Panel header="2. Are there any accomplices?" key="2">
+          <Paragraph>
+            Check the Relations Tab
+          </Paragraph>
+        </Panel>
+        <Panel header="3. Is there evidence on the device(s) that can place Dr. Minion at the crime scene at the date and time in question?" key="3">
+          <Paragraph>
+            Yes. According to the case document, the crime happened on 02/23/2023, in the Knoy 421. From Frank, AXIOM, there is a picture of the exterior of the KNOY building taken by the same model of Dr. Minion's mobile phone(SM-G998U1) at 2/23/2023 12:28:31.
+          </Paragraph>
+        </Panel>
                 {/* Part 3 - Incorporate the new content */}
                 <Panel header="3. Is there evidence on the device(s) that can place Dr. Minion at the crime scene at the date and time in question?" key="3">
           <Paragraph>
@@ -571,14 +590,14 @@ const Report = () => {
             involves a complex set of offenses. In addition to murder, it involves treason, poisoning, invasion of a
             private home, illegal hacking, and so on. All these series of crimes are logically justified.
           </Paragraph>
-          <Title level={5}>Evidence of Frank's Murder of Natasha</Title>
+          {/* <Title level={5}>Evidence of Frank's Murder of Natasha</Title> */}
           <Paragraph>
             In the case of Frank's alleged murder of Natasha, Frank had sufficient motive and evidence to prove that he
             had been killed by Natasha's attempted VX poisoning between 3:00 and 4:00 p.m. on 2/20/2023. He experienced a
             heart attack soon after drinking the coffee that Natasha gave him, as evidenced by the text messages he sent
             to Natasha, the search logs regarding the poison, the emails sent to Dr. Rogers, and his Facebook post.
           </Paragraph>
-          <Title level={5}>Natasha's Involvement</Title>
+          {/* <Title level={5}>Natasha's Involvement</Title> */}
           <Paragraph>
             From Natasha's side, we also have a large number of records relating to her before and after the poisoning,
             including the package suspected to be related to the poison and instructions for poisoning sent by her uncle
@@ -586,7 +605,7 @@ const Report = () => {
             the operation. In addition to the poisoning, there are also text message records surfacing his suspicions
             that someone had broken into his home as well as spying on him, etc.
           </Paragraph>
-          <Title level={5}>Criminal Activity Relating to Treason</Title>
+          {/* <Title level={5}>Criminal Activity Relating to Treason</Title> */}
           <Paragraph>
             As for the criminal activity portion relating to treason, there is also enough evidence to charge the
             suspects. Boris, who himself identifies as both a former KGB agent and Natasha's uncle, worked with Natasha
